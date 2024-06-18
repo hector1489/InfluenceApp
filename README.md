@@ -33,10 +33,6 @@ Rifa en línea donde los participantes pueden comprar tickets para participar en
 - Los íconos utilizados en el proyecto son de Font Awesome (https://fontawesome.com/).
 - El estilo de gradiente en el fondo se logra con CSS.
 
-## Contribuir
-
-Si deseas contribuir a este proyecto, siéntete libre de hacer un fork y enviar tus mejoras a través de pull requests.
-
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
