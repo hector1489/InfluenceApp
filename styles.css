@@ -88,7 +88,7 @@ nav {
 }
 
 /*hr*/
-.divider{
+.divider {
   width: 100%;
   margin: 50px 0;
   display: flex;
@@ -184,6 +184,37 @@ hr {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+td img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+td h3 {
+  margin: 10px 0;
+}
+
+td p {
+  margin: 0;
+}
+
 /* section description */
 .section-description {
   width: 100%;
@@ -196,7 +227,7 @@ hr {
 .img-description {
   width: 40rem;
   height: auto;
-  border: 1px solid  #040404;
+  border: 1px solid #040404;
 }
 
 .constainer-description {
@@ -270,5 +301,14 @@ footer {
 
   .main-navigation.active {
     display: flex;
+  }
+  
+  table, tr, td {
+    display: block;
+    width: 100%;
+  }
+
+  td {
+    margin-bottom: 20px;
   }
 }
