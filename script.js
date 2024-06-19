@@ -13,6 +13,86 @@ document.addEventListener('DOMContentLoaded', () => {
     window.location.href = 'confirm.html';
   });
 
+  const data = [
+    {
+      "id": 1,
+      "image": "https://storage.googleapis.com/chile-travel-cdn/2021/08/glaciares-shutterstock-ATR393.jpg",
+      "title": "Awards 1",
+      "price": 3000
+    },
+    {
+      "id": 2,
+      "image": "https://storage.googleapis.com/chile-travel-cdn/2021/08/glaciares-shutterstock-ATR393.jpg",
+      "title": "Awards 2",
+      "price": 3000
+    },
+    {
+      "id": 3,
+      "image": "https://storage.googleapis.com/chile-travel-cdn/2021/08/glaciares-shutterstock-ATR393.jpg",
+      "title": "Awards 3",
+      "price": 3000
+    }
+  ];
+
+  const tableBody = document.getElementById('awards-table-body');
+
+  data.forEach(item => {
+    const row = document.createElement('tr');
+    const cell = document.createElement('td');
+    const img = document.createElement('img');
+    img.src = item.image;
+    img.alt = `Award Image ${item.id}`;
+
+    const title = document.createElement('h3');
+    title.textContent = item.title;
+
+    const price = document.createElement('p');
+    price.textContent = `$${item.price}`;
+
+    cell.appendChild(img);
+    cell.appendChild(title);
+    cell.appendChild(price);
+    row.appendChild(cell);
+    tableBody.appendChild(row);
+  });
+
+  const data2 = [
+    {
+      "id": 1,
+      "image": "https://storage.googleapis.com/chile-travel-cdn/2021/08/glaciares-shutterstock-ATR393.jpg",
+      "title": "Ticket 1",
+      "price": 5000
+    },
+    {
+      "id": 2,
+      "image": "https://storage.googleapis.com/chile-travel-cdn/2021/08/glaciares-shutterstock-ATR393.jpg",
+      "title": "Ticket 2",
+      "price": 10000
+    },
+  ];
+
+
+  const cardsContainer = document.querySelector('.cards-sales');
+
+  data2.forEach(item => {
+    const card = document.createElement('div');
+    card.classList.add('card');
+
+    const img = document.createElement('img');
+    img.src = item.image;
+    img.alt = `Award Image ${item.id}`;
+
+    const title = document.createElement('h3');
+    title.textContent = item.title;
+
+    const price = document.createElement('p');
+    price.textContent = `$${item.price}`;
+
+    card.appendChild(img);
+    card.appendChild(title);
+    card.appendChild(price);
+    cardsContainer.appendChild(card);
+  });
 });
 
 function goBack() {
