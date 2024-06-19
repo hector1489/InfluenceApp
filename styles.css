@@ -314,6 +314,7 @@ td button:hover {
   min-height: 25rem;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   padding: 4rem;
   gap: 20px;
 }
@@ -321,6 +322,7 @@ td button:hover {
 .img-description {
   max-width: 40rem;
   max-height: auto;
+  min-height: 200px;
   border: 1px solid #040404;
   overflow: hidden;
 }
@@ -330,7 +332,6 @@ td button:hover {
   height: auto;
   object-fit: cover;
 }
-
 
 .constainer-description {
   max-width: 40rem;
