@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const row = document.createElement('tr');
 
   data.forEach(item => {
-    
+
     const cell = document.createElement('td');
     const img = document.createElement('img');
     img.src = item.image;
@@ -90,9 +90,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const price = document.createElement('p');
     price.textContent = `$${item.price}`;
 
+    const button = document.createElement('button');
+    button.textContent = 'Comprar';
+    button.classList.add('buy-button');
+
+    button.addEventListener('click', () => {
+      alert(`Has comprado ${item.title} por $${item.price}`);
+    });
+
     card.appendChild(img);
     card.appendChild(title);
     card.appendChild(price);
+    card.appendChild(button);
     cardsContainer.appendChild(card);
   });
 });

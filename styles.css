@@ -234,6 +234,21 @@ hr {
   color: #0856E1;
 }
 
+.card button {
+  width: 50%;
+  min-height: 30px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #6D6D6D;
+  color: #FBF969;
+  border: none;
+  border-radius: 5px;
+}
+
+.card button:hover {
+  background-color: #8DC53B;
+}
+
 /* section awards */
 .section-awards {
   width: 100%;
