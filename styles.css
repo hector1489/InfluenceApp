@@ -14,6 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -169,13 +170,45 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .sales-header {
   text-align: center;
 }
 
-/* Section Icons */
+/* section awards */
+.section-awards {
+  width: 100%;
+  min-height: 25rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* section description */
+.section-description {
+  width: 100%;
+  min-height: 25rem;
+  display: flex;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.img-description {
+  width: 40rem;
+  height: auto;
+  border: 1px solid  #040404;
+}
+
+.constainer-description {
+  width: 50rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+/* section icons */
 .section-icons {
   width: 100%;
   min-height: 15rem;
