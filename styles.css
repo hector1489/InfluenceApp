@@ -176,6 +176,10 @@ hr {
 .sales-header {
   text-align: center;
 }
+.sales-header h3 {
+  text-transform: uppercase;
+  margin-top: 10px;
+}
 
 .cards-sales {
   display: flex;
@@ -219,7 +223,7 @@ hr {
 }
 
 .card h3 {
-  margin-top: 10px;
+  margin-top: 20px;
   font-size: 1.5rem;
 }
 
@@ -258,11 +262,13 @@ td img {
   width: 100%;
   min-height: 25rem;
   display: flex;
+  flex-direction: row;
   padding: 4rem;
+  gap: 20px;
 }
 
 .img-description {
-  width: 40rem;
+  max-width: 40rem;
   max-height: auto;
   border: 1px solid #040404;
   overflow: hidden;
@@ -276,7 +282,7 @@ td img {
 
 
 .constainer-description {
-  width: 50rem;
+  max-width: 40rem;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -346,6 +352,10 @@ footer {
 
   .main-navigation.active {
     display: flex;
+  }
+
+  .section-description {
+    flex-direction: column-reverse;
   }
 
   table,
