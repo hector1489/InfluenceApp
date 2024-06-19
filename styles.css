@@ -378,14 +378,18 @@ footer {
     flex-direction: column-reverse;
   }
 
-  table,
-  tr,
-  td {
-    display: block;
-    width: 100%;
+  #awards-table-body {
+    flex-direction: column;
+  }
+
+  tr {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   td {
+    max-width: 300px;
     margin-bottom: 20px;
   }
 }
