@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.location.href = 'confirm.html';
   });
 
+  //table
   const data = [
     {
       "id": 1,
@@ -50,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const price = document.createElement('p');
     price.textContent = `$ ${item.price}`;
-    
+
     const buttonTd = document.createElement('button');
     buttonTd.textContent = 'Comprar';
     buttonTd.classList.add('buy-button');
@@ -58,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     buttonTd.addEventListener('click', () => {
       alert(`Has comprado ${item.title} por $${item.price}`);
     });
-    
+
 
     cell.appendChild(img);
     cell.appendChild(title);
@@ -68,6 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     tableBody.appendChild(row);
   });
 
+  //cards
   const data2 = [
     {
       "id": 1,
