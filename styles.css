@@ -244,22 +244,36 @@ hr {
 table {
   width: 100%;
   border-collapse: collapse;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.awards-table-body {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+#awards-table-body {
+  width: 100%;
   gap: 10px;
 }
 
+tr {
+  display: flex;
+  justify-content: space-around;
+}
+
 td {
-  padding: 10px;
-  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
+td h3 {
+  margin: 10px 0;
+}
+
+td p {
+  margin: 10px 0;
+}
+
 td img {
-  max-width: 100px;
+  max-width: 300px;
   height: auto;
 }
 
