@@ -86,7 +86,22 @@ nav {
   background-color: #0856E1;
 }
 
-.container {
+/*hr*/
+.divider{
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  width: 65%;
+  height: 3px;
+  background-color: #FBF969;
+}
+
+/*section intro*/
+.container-intro {
   width: 100%;
   min-height: 25rem;
   display: flex;
@@ -147,7 +162,7 @@ nav {
   background-color: #8DC53B;
 }
 
-/*Section sales*/
+/* Section sale */
 .section-sale {
   width: 100%;
   min-height: 15rem;
@@ -160,14 +175,13 @@ nav {
   text-align: center;
 }
 
-/*Section Icons*/
+/* Section Icons */
 .section-icons {
   width: 100%;
   min-height: 15rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .social-icons {
@@ -177,19 +191,21 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background: linear-gradient(#0000 0%, #ffffff1a 100%)
+  background: linear-gradient(#0000 0%, #ffffff1a 100%);
 }
 
 .social-icons a i {
-  font-size: 2em;
+  font-size: 3em;
   color: #FBF969;
 }
 
+/*Footer*/
 footer {
   min-height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 768px) {
