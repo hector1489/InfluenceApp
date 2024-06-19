@@ -7,10 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const transbankButton = document.querySelector('.transbank');
-  const mercadopagoButton = document.querySelector('.mercadopago');
 
   transbankButton.addEventListener('click', () => {
-    //Transbank
+    // Transbank
     window.location.href = 'confirm.html';
   });
 

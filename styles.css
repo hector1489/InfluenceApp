@@ -92,6 +92,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   align-items: center;
   background: #0856E1;
   background: linear-gradient(#0000 0%, #ffffff1a 100%);
@@ -129,6 +130,7 @@ nav {
 
 .payment-button:hover {
   background-color: #8DC53B;
+  transition: all .3s;
 }
 
 .back-button {
@@ -143,6 +145,51 @@ nav {
 
 .back-button:hover {
   background-color: #8DC53B;
+}
+
+/*Section sales*/
+.section-sale {
+  width: 100%;
+  min-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sales-header {
+  text-align: center;
+}
+
+/*Section Icons*/
+.section-icons {
+  width: 100%;
+  min-height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.social-icons {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(#0000 0%, #ffffff1a 100%)
+}
+
+.social-icons a i {
+  font-size: 2em;
+  color: #FBF969;
+}
+
+footer {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
