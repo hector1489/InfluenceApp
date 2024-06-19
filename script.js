@@ -50,10 +50,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const price = document.createElement('p');
     price.textContent = `$ ${item.price}`;
+    
+    const buttonTd = document.createElement('button');
+    buttonTd.textContent = 'Comprar';
+    buttonTd.classList.add('buy-button');
+
+    buttonTd.addEventListener('click', () => {
+      alert(`Has comprado ${item.title} por $${item.price}`);
+    });
+    
 
     cell.appendChild(img);
     cell.appendChild(title);
     cell.appendChild(price);
+    cell.appendChild(buttonTd);
     row.appendChild(cell);
     tableBody.appendChild(row);
   });

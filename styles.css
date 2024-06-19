@@ -176,6 +176,7 @@ hr {
 .sales-header {
   text-align: center;
 }
+
 .sales-header h3 {
   text-transform: uppercase;
   margin-top: 10px;
@@ -185,7 +186,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   margin-top: 40px;
 }
 
@@ -290,6 +291,21 @@ td p {
 td img {
   max-width: 300px;
   height: auto;
+}
+
+td button {
+  width: 50%;
+  min-height: 30px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #6D6D6D;
+  color: #FBF969;
+  border: none;
+  margin-bottom: 10px;
+}
+
+td button:hover {
+  background-color: #8DC53B;
 }
 
 /* section description */
