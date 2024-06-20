@@ -1,3 +1,15 @@
+:root {
+  --color-background-dark: #040404;
+  --color-background-blue: #0856E1;
+  --color-text-yellow: #FBF969;
+  --color-text-green: #8DC53B;
+  --color-background-light-gray: #6D6D6D;
+  --color-background-form: #fff;
+  --color-button-blue: #007bff;
+  --color-button-blue-hover: #0056b3;
+  --color-border-blue: #0856E1;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,15 +18,14 @@
 
 body {
   width: 100%;
-  background: #040404;
-  background: linear-gradient(to right, #040404, #0856E1);
-  color: #FBF969;
-  font-family: Arial, sans-serif;
+  background: var(--color-background-dark);
+  background: linear-gradient(to right, var(--color-background-dark), var(--color-background-blue));
+  color: var(--color-text-yellow);
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -23,7 +34,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #040404;
+  background-color: var(--color-background-dark);
   padding: 10px 0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -44,7 +55,7 @@ nav {
 
 .nav-logo .logo {
   font-size: 24px;
-  color: #FBF969;
+  color: var(--color-text-yellow);
   text-decoration: none;
   margin-right: 20px;
 }
@@ -52,7 +63,7 @@ nav {
 .nav-toggle {
   display: none;
   font-size: 24px;
-  color: #FBF969;
+  color: var(--color-text-yellow);
   background: none;
   border: none;
   cursor: pointer;
@@ -75,7 +86,7 @@ nav {
 }
 
 .main-navigation ul li a {
-  color: #FBF969;
+  color: var(--color-text-yellow);
   text-decoration: none;
   font-size: 16px;
   padding: 8px 16px;
@@ -84,7 +95,7 @@ nav {
 }
 
 .main-navigation ul li a:hover {
-  background-color: #0856E1;
+  background-color: var(--color-background-blue);
 }
 
 /*hr*/
@@ -98,7 +109,7 @@ nav {
 hr {
   width: 65%;
   height: 3px;
-  background-color: #FBF969;
+  background-color: var(--color-text-yellow);
 }
 
 /*section intro*/
@@ -110,21 +121,21 @@ hr {
   justify-content: center;
   text-align: center;
   align-items: center;
-  background: #0856E1;
+  background: var(--color-background-blue);
   background: linear-gradient(#0000 0%, #ffffff1a 100%);
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .title {
-  color: #8DC53B;
+  color: var(--color-text-green);
   font-size: 2em;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
 .description {
-  color: #FBF969;
+  color: var(--color-text-yellow);
   margin-bottom: 20px;
 }
 
@@ -135,8 +146,8 @@ hr {
 }
 
 .payment-button {
-  background-color: #6D6D6D;
-  color: #FBF969;
+  background-color: var(--color-background-light-gray);
+  color: var(--color-text-yellow);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -145,13 +156,13 @@ hr {
 }
 
 .payment-button:hover {
-  background-color: #8DC53B;
+  background-color: var(--color-text-green);
   transition: all .3s;
 }
 
 .back-button {
-  background-color: #6D6D6D;
-  color: #FBF969;
+  background-color: var(--color-background-light-gray);
+  color: var(--color-text-yellow);
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -160,7 +171,7 @@ hr {
 }
 
 .back-button:hover {
-  background-color: #8DC53B;
+  background-color: var(--color-text-green);
 }
 
 /* Section sale */
@@ -191,7 +202,7 @@ hr {
   justify-content: center;
 }
 
-details > summary {
+details>summary {
   font-style: italic;
 }
 
@@ -211,7 +222,7 @@ details > summary {
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  border: 1px solid #0856E1;
+  border: 1px solid var(--color-border-blue);
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -245,7 +256,7 @@ details > summary {
   margin-top: 5px;
   font-size: 1.2rem;
   font-weight: bold;
-  color: #040404;
+  color: var(--color-background-dark);
 }
 
 .card button {
@@ -253,14 +264,14 @@ details > summary {
   min-height: 30px;
   margin: auto;
   margin-top: 10px;
-  background-color: #6D6D6D;
-  color: #FBF969;
+  background-color: var(--color-background-light-gray);
+  color: var(--color-text-yellow);
   border: none;
   border-radius: 5px;
 }
 
 .card button:hover {
-  background-color: #8DC53B;
+  background-color: var(--color-text-green);
 }
 
 /*form*/
@@ -273,7 +284,7 @@ details > summary {
 }
 
 .section-form form {
-  background-color: #fff;
+  background-color: var(--color-background-form);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -316,13 +327,13 @@ details > summary {
 
 .section-form input[type="text"]:focus,
 .section-form input[type="email"]:focus {
-  border-color: #007bff;
+  border-color: var(--color-button-blue);
   outline: none;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .section-form button[type="submit"] {
-  background-color: #007bff;
+  background-color: var(--color-button-blue);
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -333,7 +344,7 @@ details > summary {
 }
 
 .section-form button[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: var(--color-button-blue-hover);
 }
 
 /* section awards */
@@ -384,14 +395,14 @@ td button {
   min-height: 30px;
   margin: auto;
   margin-top: 10px;
-  background-color: #6D6D6D;
-  color: #FBF969;
+  background-color: var(--color-background-light-gray);
+  color: var(--color-text-yellow);
   border: none;
   margin-bottom: 10px;
 }
 
 td button:hover {
-  background-color: #8DC53B;
+  background-color: var(--color-text-green);
 }
 
 /* section description */
@@ -409,7 +420,7 @@ td button:hover {
   max-width: 40rem;
   max-height: auto;
   min-height: 200px;
-  border: 1px solid #040404;
+  border: 1px solid var(--color-background-dark);
   overflow: hidden;
 }
 
@@ -449,7 +460,7 @@ td button:hover {
 
 .social-icons a i {
   font-size: 3em;
-  color: #FBF969;
+  color: var(--color-text-yellow);
 }
 
 /*arrow up*/
@@ -458,15 +469,15 @@ td button:hover {
   min-height: 35px;
 }
 
-.arrow-up a  {
-  color: #8DC53B;
+.arrow-up a {
+  color: var(--color-text-green);
   transition: color 0.2s;
   text-decoration: none;
   margin: 10px;
 }
 
 .arrow-up a:hover {
-  color: #0056b3;
+  color: var(--color-button-blue-hover);
 }
 
 /*Footer*/
