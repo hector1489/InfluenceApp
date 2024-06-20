@@ -420,7 +420,6 @@ td button:hover {
   max-width: 40rem;
   max-height: auto;
   min-height: 200px;
-  border: 1px solid var(--color-background-dark);
   overflow: hidden;
 }
 
