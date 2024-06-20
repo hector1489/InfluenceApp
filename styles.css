@@ -191,6 +191,10 @@ hr {
   justify-content: center;
 }
 
+details > summary {
+  font-style: italic;
+}
+
 .cards-sales {
   display: flex;
   flex-wrap: wrap;
@@ -241,7 +245,7 @@ hr {
   margin-top: 5px;
   font-size: 1.2rem;
   font-weight: bold;
-  color: #0856E1;
+  color: #040404;
 }
 
 .card button {
