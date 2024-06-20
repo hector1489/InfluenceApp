@@ -250,6 +250,79 @@ hr {
   background-color: #8DC53B;
 }
 
+/*form*/
+.section-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section-form form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  text-align: center;
+}
+
+.section-form ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section-form li {
+  margin-bottom: 15px;
+}
+
+.section-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.section-form input[type="text"],
+.section-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #333;
+}
+
+.section-form input[type="text"]:focus,
+.section-form input[type="email"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.section-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.section-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
 /* section awards */
 .section-awards {
   width: 100%;

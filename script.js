@@ -19,6 +19,36 @@ document.addEventListener('DOMContentLoaded', () => {
     window.location.href = 'confirm.html';
   });
 
+  const form = document.getElementById('user-form');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(form);
+    const data = {
+      user_name: formData.get('user_name'),
+      user_direction: formData.get('user_direction'),
+      user_mail: formData.get('user_mail'),
+      user_instagram: formData.get('user_instagram')
+    };
+
+    fetch('/API para form', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+      .then(response => response.json())
+      .then(result => {
+        console.log('Success:', result);
+        alert('Formulario enviado con éxito!');
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Hubo un error al enviar el formulario.');
+      });
+  });
+
   //table
   const data = [
     {
